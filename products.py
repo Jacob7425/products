@@ -23,7 +23,7 @@ while True:
 	p = []
 	p.append(name)  
 	p.append(price)
-	products.append(p)  # 8~11 可直接寫成 products.append([name, price])
+	products.append(p)  # 23~26 可直接寫成 products.append([name, price])
 print(products)
 
 # 印出所有購買紀錄
@@ -32,6 +32,6 @@ for p in products:
 
 #寫入檔案
 with open('products.csv', 'w') as f:
-	f.write('商品,價格\n') # 如遇上亂碼 在17'w'後面加上, encoding= 'utf-8'
+	f.write('商品,價格\n') # 如遇上亂碼 在34'w'後面加上, encoding= 'utf-8'
 	for p in products:
 		f.write(p[0] + ',' + str(p[1]) + '\n')
